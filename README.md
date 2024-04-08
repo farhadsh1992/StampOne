@@ -1,4 +1,4 @@
-# StampOne: Addressing Frequency Balance in Printer-proof Steganography [paper](dd)
+# StampOne: Addressing Frequency Balance in Printer-proof Steganography [[paper]](dd)
 
 ![alt text](https://github.com/farhadsh1992/StampOne.git/Images/encoded_samples)
 
