@@ -195,7 +195,7 @@ These datasets provided a comprehensive basis for both training and evaluating t
 <hr>
 
 ## Acknowledgments
-We extend our gratitude to all the authors of this paper for their contributions. Additionally, we would like to thank the authors of (StegaStamp)[https://github.com/tancik/StegaStamp] and (RoSteALS)[https://github.com/TuBui/RoSteALS]  for their inspiring work, which played a significant role in the realization of this model.
+We extend our gratitude to all the authors of this paper for their contributions. Additionally, we would like to thank the authors of [StegaStamp](https://github.com/tancik/StegaStamp) and [RoSteALS](https://github.com/TuBui/RoSteALS)  for their inspiring work, which played a significant role in the realization of this model.
 
 <hr>
 
