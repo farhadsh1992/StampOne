@@ -22,8 +22,8 @@ Or you can install neccessary libraries as follows:
 pip install -r requirements.txt
 ```
 
-### Pre-trained TFlite Models
-Contanct us for dwonloading TFlite format of pre-trained encoder and decoder models. (Farhadsh1992@gmail.com)[Farhadsh1992@gmail.com]
+### <code style="color:red">Pre-trained TFlite Models</code>
+Contanct us for dwonloading TFlite format of pre-trained encoder and decoder models. [Farhadsh1992@gmail.com](Farhadsh1992@gmail.com)
 
 <hr>
 
