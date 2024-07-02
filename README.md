@@ -66,7 +66,7 @@ bashFile/
 ```
 
 #### Color Histogram (ColorHisto) or  HistoGan 
-[HistoGAN: Controlling Colors of GAN-Generated and Real Images via Color Histograms](ttps://github.com/mahmoudnafifi/HistoGAN)
+[HistoGAN: Controlling Colors of GAN-Generated and Real Images via Color Histograms](https://github.com/mahmoudnafifi/HistoGAN)
 
 HistoGan leverages color histograms due to their intuitive representation of image color, which remains independent of domain-specific semantics. The color histogram is based on Log-Chroma space and calculates the Euclidean norm of the histogram features (H) between encoded and original images.
 
