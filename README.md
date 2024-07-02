@@ -33,17 +33,19 @@ For downlaod pretrained encoder and decoder (tflite format), contact us ```Farha
 
 ## Detector Models
 
-A. FaceDetection
+#### A. FaceDetection
 
 Based on [PRNet](https://github.com/yfeng95/PRNet), this step includes detecting, cropping, and aligning faces.
-B. ObjectDetection
+#### B. ObjectDetection
 
 Based on [YoloV5](https://github.com/LongxingTan/tfyolo)  for object detection, this step involves detecting and cropping the largest object in the background.
-C. Border
+
+#### C. Border
 
 Using OpenCV to add a border with a specific color around the encoded part. This color should be calibrated for the sensor separately. More details can be found [here](https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv).
-D. QRCode
 
+
+#### D. QRCode
 Adding a QR code pattern in the corner of the image to facilitate the detection of the encoded part of the image.
 
 
