@@ -143,13 +143,11 @@ Please **CITE** our paper whenever this repository is used to help produce publi
 incorporated into other software.
 
 @inproceedings{shadmand2024stampone,
-  title={StampOne: Addressing Frequency Balance in Printer-proof Steganography},
-  author={Shadmand, Farhad and Medvedev, Iurii and Schirmer, Luiz and Marcos, Jo{\~a}o and Gon{\c{c}}alves, Nuno},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  
-  pages={4367--4376},
-  
-  year={2024}
+  title={StampOne: Addressing Frequency Balance in Printer-proof Steganography}, <br>
+  author={Shadmand, Farhad and Medvedev, Iurii and Schirmer, Luiz and Marcos, Jo{\~a}o and Gon{\c{c}}alves, Nuno}, <br>
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, <br>
+  pages={4367--4376}, <br>
+  year={2024} <br>
 }
 
 
