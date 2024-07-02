@@ -193,15 +193,18 @@ For our testing experiments, we utilized the following datasets:
       illumination, and background, making it ideal for testing face recognition algorithms.
 
 These datasets provided a comprehensive basis for both training and evaluating the performance of our models.
+<hr>
 
 ## Results
 
+<hr>
 
 ## Acknowledgments
 We extend our gratitude to all the authors of this paper for their contributions. 
 Additionally, we would like to thank the authors of StegaStamp and RoSteALS for 
 their inspiring work, which played a significant role in the realization of this model.
 
+<hr>
 
 ## References
 Please CITE our paper whenever this repository is used to help produce published results or 
