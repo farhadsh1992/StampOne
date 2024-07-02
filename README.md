@@ -1,5 +1,5 @@
 
-# StampOne: Addressing Frequency Balance in Printer-proof Steganography [Paper](https://openaccess.thecvf.com/content/CVPR2024W/WMF/html/Shadmand_StampOne_Addressing_Frequency_Balance_in_Printer-proof_Steganography_CVPRW_2024_paper.html)
+# StampOne: Addressing Frequency Balance in Printer-proof Steganography [[Paper]](https://openaccess.thecvf.com/content/CVPR2024W/WMF/html/Shadmand_StampOne_Addressing_Frequency_Balance_in_Printer-proof_Steganography_CVPRW_2024_paper.html)
 
 ![alt text](https://github.com/farhadsh1992/StampOne.git/Images/encoded_samples)
 
