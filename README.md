@@ -39,6 +39,9 @@ conda activate StampOne_keras3
 pip install -r requirements.txt
 ```
 
+### Pre-trained model
+For downlaod pretrained encoder and decoder (tflite format), contact us ```Farhadsh1992@gmail.com```
+
 ## Detector Models
 
 
