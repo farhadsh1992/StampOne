@@ -47,20 +47,20 @@ For downlaod pretrained encoder and decoder (tflite format), contact us ```Farha
 
 ## Detector Models
 
-
-#### A. FaceDetection
+A. FaceDetection
 
 Based on (PRNet)[https://github.com/yfeng95/PRNet], this step includes detecting, cropping, and aligning faces.
+B. ObjectDetection
 
-#### B. ObjectDetection
+Based on (YoloV5)[https://github.com/LongxingTan/tfyolo]  for object detection, this step involves detecting and cropping the largest object in the background.
+C. Border
 
-Based on (YoloV5)[https://github.com/LongxingTan/tfyolo] for object detection, this step involves detecting and cropping the largest object in the background.
+Using OpenCV to add a border with a specific color around the encoded part. This color should be calibrated for the sensor separately. More details can be found [here](https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv).
+D. QRCode
 
-#### C. Border
-Using OpenCV to add a border with a specific color around the encoded part. This color should be calibrated for the sensor separately. More details can be found (here)[https://www.tutorialspoint.com/color-identification-in-images-using-python-and-opencv] .
-
-#### D. QRCode
 Adding a QR code pattern in the corner of the image to facilitate the detection of the encoded part of the image.
+
+
 
 <hr>
 
@@ -127,8 +127,7 @@ bashFile/
 ```
 
 #### Color Histogram (ColorHisto) or  HistoGan 
-HistoGAN: Controlling Colors of GAN-Generated and Real Images via Color Histograms 
-[link-gitbub: https://github.com/mahmoudnafifi/HistoGAN]
+[HistoGAN: Controlling Colors of GAN-Generated and Real Images via Color Histograms](link-gitbub: https://github.com/mahmoudnafifi/HistoGAN)
 
 HistoGan leverages color histograms due to their intuitive representation of image color, 
 which remains independent of domain-specific semantics. The color histogram is based on 
@@ -142,14 +141,10 @@ bashFile/measure_ColorHisto.sh
 ```
 
 
-#### Learned Perceptual Image Patch Similarity (LPIPS) 
-[Link: https://github.com/richzhang/PerceptualSimilarity]
-LPIPS uses a pretrained pyramid network to extract image features from 
-different layers, and the average of these features is used to
-measure perceptual differences
+#### Learned Perceptual Image Patch Similarity [(LPIPS)](https://github.com/richzhang/PerceptualSimilarity)
+LPIPS uses a pretrained pyramid network to extract image features from different layers, and the average of these features is used tomeasure perceptual differences
 
-Below is a code snippet to quantify the Learned Perceptual Image Patch Similarity (LPIPS) 
-between encoded and original images using the LPIPS library in Python:
+Below is a code snippet to quantify the Learned Perceptual Image Patch Similarity (LPIPS) between encoded and original images using the LPIPS library in Python:
 
 ```terminal
 bashFile/measure_LPIPS.sh
@@ -157,8 +152,7 @@ bashFile/measure_LPIPS.sh
 
 
 #### Structural Similarity (SSIM)
-SSIM index is computed for the image with respect to the reference image. 
-The reference image is usually needs to be of perfect quality.
+SSIM index is computed for the image with respect to the reference image. The reference image is usually needs to be of perfect quality.
 
 
 ```terminal
@@ -166,9 +160,7 @@ bashFile/measure_SSIM.sh
 ```
 
 #### peak signal-to-noise ratio (PSNR) 
-PSNR, is an engineering term for the ratio between the maximum possible power 
-of a signal and the power of corrupting noise that affects the fidelity of 
-its representation:
+PSNR, is an engineering term for the ratio between the maximum possible power of a signal and the power of corrupting noise that affects the fidelity of its representation:
 
 ```terminal
 bashFile/measure_PSNR.sh
@@ -186,20 +178,14 @@ has github page. I will refrence it. if not I make a file for that.
 ## Dataset 
 To perform our training experiments, we utilized subsets of two main datasets:
 
-    - [COCO Dataset](https://cocodataset.org/#home): Consisting of approximately 123,000 images.
-    - [DeepFashion Dataset](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): Consisting of approximately 800,000 images.
+- [COCO Dataset](https://cocodataset.org/#home): Consisting of approximately 123,000 images.
+- [DeepFashion Dataset](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): Consisting of approximately 800,000 images.
 
 For our testing experiments, we utilized the following datasets:
 
-    - [BSDS500](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300):A benchmark dataset for image segmentation, consisting of 500 natural 
-      images divided into training, validation, and test sets. This dataset is widely used 
-      for evaluating image processing and computer vision algorithms.
-    - [Urban](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): A dataset comprising high-resolution images of urban scenes, including 
-       buildings, streets, and various urban structures. This dataset is 
-       useful for tasks related to urban scene understanding and analysis.
-    - [VGGFace2](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): A large-scale face recognition dataset containing images of 9,131 subjects, 
-      with an average of 362.6 images per subject. The images exhibit large variations in pose, age, 
-      illumination, and background, making it ideal for testing face recognition algorithms.
+- [BSDS500](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300):A benchmark dataset for image segmentation, consisting of 500 natural images divided into training, validation, and test sets. This dataset is widely used for evaluating image processing and computer vision algorithms.
+- [Urban](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): A dataset comprising high-resolution images of urban scenes, including buildings, streets, and various urban structures. This dataset is useful for tasks related to urban scene understanding and analysis.
+- [VGGFace2](https://chatgpt.com/c/e8a5f90c-bb00-437b-bd37-d2dda4e93300): A large-scale face recognition dataset containing images of 9,131 subjects, with an average of 362.6 images per subject. The images exhibit large variations in pose, age, illumination, and background, making it ideal for testing face recognition algorithms.
 
 These datasets provided a comprehensive basis for both training and evaluating the performance of our models.
 <hr>
@@ -209,15 +195,12 @@ These datasets provided a comprehensive basis for both training and evaluating t
 <hr>
 
 ## Acknowledgments
-We extend our gratitude to all the authors of this paper for their contributions. 
-Additionally, we would like to thank the authors of StegaStamp and RoSteALS for 
-their inspiring work, which played a significant role in the realization of this model.
+We extend our gratitude to all the authors of this paper for their contributions. Additionally, we would like to thank the authors of StegaStamp and RoSteALS for their inspiring work, which played a significant role in the realization of this model.
 
 <hr>
 
 ## References
-Please CITE our paper whenever this repository is used to help produce published results or 
-incorporated into other software.
+Please <b>CITE</b> our paper whenever this repository is used to help produce published results or incorporated into other software.
 
 @inproceedings{shadmand2024stampone,
   title={StampOne: Addressing Frequency Balance in Printer-proof Steganography},
