@@ -146,7 +146,9 @@ incorporated into other software.
   title={StampOne: Addressing Frequency Balance in Printer-proof Steganography},
   author={Shadmand, Farhad and Medvedev, Iurii and Schirmer, Luiz and Marcos, Jo{\~a}o and Gon{\c{c}}alves, Nuno},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  
   pages={4367--4376},
+  
   year={2024}
 }
 
