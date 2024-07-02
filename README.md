@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/farhadsh1992/StampOne.git/Images/encoded_samples)
 
-## 0. Introduction
+## <code style="color : red">0. Introduction</code>
 Robust steganography and invisible watermarking techniques in printed images are crucial for anti-counterfeiting systems within the multimedia industry for copyright protection security of documents (e.g. passports) and brand protection graphic elements. Conventional steganography models mainly designed for digital non-lossy media encounter challenges in recovering messages from images degraded by printing and scanning or social media compression particularly due to limitations associated with utilizing image regions characterized by the lowest and highest frequencies. In this paper we introduce StampOne a novel printer-proof steganography model utilizing Generative Adversarial Networks (GANs). StampOne ensures balanced frequency density between encoder and decoder inputs reducing disparities between original and encoded images. Our method through integration with diverse U-shape networks (image-to-image) emphasizes the significance of frequency domain analysis in robust steganography. It facilitates the development of robust steganography models capable of withstanding diverse noise types including JPEG compression contrast variations brightness fluctuations aliasing blurring and Gaussian noises. It surpasses previous models in both quality of encoded images and printer-proof capabilities. 
 
 <hr>
