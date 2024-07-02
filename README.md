@@ -202,7 +202,7 @@ We extend our gratitude to all the authors of this paper for their contributions
 ## References
 Please <b>CITE</b> our paper whenever this repository is used to help produce published results or incorporated into other software.
 
-@inproceedings{shadmand2024stampone,
+@inproceedings{shadmand2024stampone,<br>
   title={StampOne: Addressing Frequency Balance in Printer-proof Steganography},<br>
   author={Shadmand, Farhad and Medvedev, Iurii and Schirmer, Luiz and Marcos, Jo{\~a}o and Gon{\c{c}}alves, Nuno},<br>
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>
