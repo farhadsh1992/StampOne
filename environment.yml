@@ -1,0 +1,66 @@
+name: StampOne_keras3
+python_version: "3.9"
+dependencies:
+  - cudatoolkit
+  - python >= 3.8
+  - pip
+  - numpy>=1.25
+  - scipy
+  - tensorflow #>= 2.15
+  - requests=2.26.0
+  - ninja>=1.10.2
+  - matplotlib=3.4.2
+  - imageio=2.9.0
+  - pendulum
+  - psutil
+  - tensorboard
+  - pip:
+    - imgui==2.0.0
+    - glfw==2.6.1
+    - gradio==3.35.2
+    - pyopengl==3.1.5
+    - imageio-ffmpeg==0.4.3
+    - pyspng-seunglab
+    - opencv-python
+    - onnxruntime
+    - PyWavelets
+    - pyqart
+    - qrcode
+    - lmdb
+    - tensorflow
+    - tensorflow_io
+    - tensorflow_addons
+    - tensorflow_ranking
+        
+############################################################    
+## they way produce new enviroment with Code and yml file:
+## conda env create -f environment.yml
+## conda activate StampOne_keras3
+## python train_steps.py
+############################################################
+############################################################
+## dependencies lib are installed by coda
+## and other under the pip, are installed by pip.
+############################################################
+## conda install cudatoolkit 
+############################################################
+## tensorboard --logdir="./results/logs/" --port=6008
+############################################################
+## pip install git+https://github.com/geoopt/geoopt.git
+############################################################
+## conda remove --name StampOne_keras3 --all
+############################################################
+## https://towardsdatascience.com/managing-cuda-dependencies-with-conda-89c5d817e7e1
+## - cudatoolkit = 11.8
+## - mpi4py
+## - cudnn = 8.9.2.26
+## - nccl # # installs cuda-aware openmpi
+## nvcc
+##- cudatoolkit=11
+##- cudnn=8
+##  - cupti=11
+##- cuda-nvcc
+## - channel/conda-forge
+
+
+
