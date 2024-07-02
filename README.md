@@ -22,7 +22,6 @@ Or you can install neccessary libraries as follows:
 conda create -n StampOne_keras3 python==3.9.13
 conda activate StampOne_keras3
 pip install -r requirements.txt
-pip install -r requirements.txt
 ```
 
 ### <code style="color:red">Pre-trained TFlite Models</code>
