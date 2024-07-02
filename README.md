@@ -21,6 +21,7 @@ steganography models capable of withstanding diverse noise types including JPEG 
 contrast variations brightness fluctuations aliasing blurring and Gaussian noises. 
 It surpasses previous models in both quality of encoded images and printer-proof capabilities. 
 
+<hr>
 
 ## Installation
 Python ```3.9.13```,  keras 3.1 and TensorFlow ```2.16.1``` are used in this implementation.
@@ -42,6 +43,8 @@ pip install -r requirements.txt
 ### Pre-trained model
 For downlaod pretrained encoder and decoder (tflite format), contact us ```Farhadsh1992@gmail.com```
 
+<hr>
+
 ## Detector Models
 
 
@@ -59,6 +62,7 @@ Using OpenCV to add a border with a specific color around the encoded part. This
 #### D. QRCode
 Adding a QR code pattern in the corner of the image to facilitate the detection of the encoded part of the image.
 
+<hr>
 
 ## Encode the original images
 Preprocessing the inputs of the encoder network by reshaping the 256-bit 
@@ -77,6 +81,7 @@ The pre-trained U-shape network, AttentionVNet, is available for use.
 bashFile/run_encoder.sh
 ```
 
+<hr>
 
 ## Decode the encoded images
 The gradient and wavelet transformations of the encoded images are processed 
@@ -91,7 +96,7 @@ The pre-trained U-shape network, AttentionVNet, is available for use.
 bashFile/run_decoder.sh
 ```
 
-
+<hr>
 
 ## Evaluation  (metric)
 
@@ -105,6 +110,8 @@ images are sufficiently distinct from the originals, making them interesting and
 ```terminal
 bashFile/
 ```
+
+
 
 ### Perceptual Similarity and Diversity Metric (PSDM)
 In addition to the widely used Fréchet Inception Distance (FID), 
@@ -167,12 +174,14 @@ its representation:
 bashFile/measure_PSNR.sh
 ```
 
+<hr>
 
 ## Noise Simulation
 If the paper "Noise simulation for the improvement of training 
 deep neural network for printer-proof steganography"
 has github page. I will refrence it. if not I make a file for that.
 
+<hr>
 
 ## Dataset 
 To perform our training experiments, we utilized subsets of two main datasets:
