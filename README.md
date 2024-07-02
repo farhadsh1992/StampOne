@@ -7,7 +7,7 @@ Robust steganography and invisible watermarking techniques in printed images are
 
 <hr>
 
-### 1. Installation
+### <code style="color:red">1. Installation</code>
 Python ```3.9.13```,  keras 3.1 and TensorFlow ```2.16.1``` are used in this implementation.
 
 It is recommended to create conda env from our provided environment.yml:
@@ -21,13 +21,17 @@ Or you can install neccessary libraries as follows:
 ```terminal
 pip install -r requirements.txt
 ```
+
+### Pre-trained TFlite Models
+Contanct us for dwonloading TFlite format of pre-trained encoder and decoder models. (Farhadsh1992@gmail.com)[Farhadsh1992@gmail.com]
+
 <hr>
 
-### 2. Detector Models
+### <code style="color:red">2. Detector Models</code>
 
 <hr>
 
-### 3. Encode the original images
+### <code style="color:red">3. Encode the original images</code>
 Preprocessing the inputs of the encoder network by reshaping the 256-bit binary sequences into a 16×1616×16 2D matrix in grayscale image format. This 2D message is then converted to a 3D RGB image format. Both the message and the cover image undergo gradient and wavelet operations. The wavelet transform is applied to achieve dimensions of 16×16×1516×16×15 for the message and 256×256×15256×256×15 for the original image. Subsequently, the "Depthwise" layer is employed to assign distinct weights to each of the discrete wavelet transform (DWT) sub-bands. The highlighted message in the wavelet domain is then forwarded to the Message Preparation Network (MPN).
 
 The pre-trained U-shape network, AttentionVNet, is available for use.
@@ -38,7 +42,7 @@ bashFile/run_encoder.sh
 
 <hr>
 
-### 4. Decode the encoded images
+### <code style="color:red">4. Decode the encoded images</code>
 The gradient and wavelet transformations of the encoded images are processed through the "Depthwise" layer and the Spatial Transformer Network (STN) [23]. In the "Depthwise" layer, each channel of the image frequency wavelet is assigned a specific weight to emphasize the high-frequency components of the encoded image.The STN is utilized to prevent warping and rotation when printing and capturing encoded images using a camera sensor. The pre-trained U-shape network, AttentionVNet, is available for use.
 
 ```terminal
