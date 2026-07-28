@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stampone"
+version = "0.1.0"
+description = "StampOne: Addressing Frequency Balance in Printer-proof Steganography"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Farhad Shadmand", email = "farhadsh1992@gmail.com"},
+]
+keywords = ["steganography", "watermarking", "gan", "tensorflow"]
+dependencies = [
+    "tensorflow>=2.16",
+    "keras>=3.1",
+    "opencv-python",
+    "numpy",
+    "pandas",
+    "bchlib",
+    "reedsolo",
+    "scikit-image",
+    "dlib",
+    "tflite-runtime",
+    "tensorflow-addons",
+    "matplotlib",
+    "scikit-learn",
+    "six",
+    "jax",
+    "pendulum",
+    "psutil",
+    "requests",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+# Only needed to re-run the vendored LPIPS PyTorch->TF conversion scripts
+# in loss_functions_lib/lpipstf/ and loss_functions_lib/lpips_model/lpips-tensorflow/
+export = ["torch", "onnx", "onnx-tf"]
+
+[project.scripts]
+stampone-encode = "stampone.encoder:main"
+stampone-decode = "stampone.decoder:main"
+
+[project.urls]
+Homepage = "https://github.com/farhadsh1992/StampOne"
+Paper = "https://openaccess.thecvf.com/content/CVPR2024W/WMF/html/Shadmand_StampOne_Addressing_Frequency_Balance_in_Printer-proof_Steganography_CVPRW_2024_paper.html"
+
+[tool.setuptools]
+packages = [
+    "stampone",
+    "stampone.FarhadCV",
+    "stampone.FarhadCV.Face_Detection_Utilies",
+    "stampone.tools_nvidia",
+    "stampone.tools_encoder",
+    "stampone.tools_decoder",
+    "stampone.tools_detection",
+    "stampone.tools_detection.Tools_ObjectDetection",
+    "stampone.tools_detection.Tools_Face_Detection_System",
+    "stampone.loss_functions_lib",
+    "stampone.loss_functions_lib.Tools_Lpips",
+]

@@ -4,34 +4,32 @@ dependencies:
   - cudatoolkit
   - python >= 3.8
   - pip
-  - numpy>=1.25
-  - scipy
-  - tensorflow #>= 2.15
-  - requests=2.26.0
-  - ninja>=1.10.2
-  - matplotlib=3.4.2
-  - imageio=2.9.0
+  - numpy
+  - matplotlib
   - pendulum
   - psutil
-  - tensorboard
+  - requests
+  - pillow
+  - scikit-image
+  - scikit-learn
+  - six
   - pip:
-    - imgui==2.0.0
-    - glfw==2.6.1
-    - gradio==3.35.2
-    - pyopengl==3.1.5
-    - imageio-ffmpeg==0.4.3
-    - pyspng-seunglab
+    - tensorflow>=2.16
+    - keras>=3.1
     - opencv-python
-    - onnxruntime
-    - PyWavelets
-    - pyqart
-    - qrcode
-    - lmdb
-    - tensorflow
-    - tensorflow_io
-    - tensorflow_addons
-    - tensorflow_ranking
-        
+    - tensorflow-addons
+    - tflite-runtime
+    - dlib
+    - bchlib
+    - reedsolo
+    - pandas
+    - jax
+    # Only needed to re-run the vendored LPIPS PyTorch->TF conversion scripts
+    # in loss_functions_lib/lpipstf/ and loss_functions_lib/lpips_model/lpips-tensorflow/
+    - torch
+    - onnx
+    - onnx-tf
+
 ############################################################    
 ## they way produce new enviroment with Code and yml file:
 ## conda env create -f environment.yml

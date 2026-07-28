@@ -1,0 +1,25 @@
+# Pretrained model weights / checkpoints (not distributed via GitHub; contact author, see README)
+*.tflite
+*.h5
+*.pb
+*.onnx
+*.pth
+*.ckpt
+*.data-00000-of-*
+*.data-00001-of-*
+*.index
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

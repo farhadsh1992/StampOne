@@ -1,10 +1,32 @@
-tensorflow 
-scipy==1.5.4
-numpy==1.19.5
-tqdm
-pytorch-fid==0.2.0
-pandas==1.1.5
-lpips==0.1.4
-lmdb==1.2.1
-ftfy
-regex
+# Core: StampOne encoder/decoder (encoding.py, decoding.py, tools_encoder/, tools_decoder/)
+tensorflow>=2.16
+keras>=3.1
+opencv-python
+numpy
+pandas
+bchlib
+reedsolo
+
+# Detection routers (tools_detection/) and legacy PRNet/dlib face pipeline
+scikit-image
+dlib
+tflite-runtime
+tensorflow-addons
+
+# loss_functions_lib/ training losses and metrics
+matplotlib
+scikit-learn
+six
+jax
+
+# FarhadCV/ shared helpers (logging, progress, notifications)
+pendulum
+psutil
+requests
+Pillow
+
+# Only needed to re-run the vendored LPIPS PyTorch->TF conversion scripts
+# in loss_functions_lib/lpipstf/ and loss_functions_lib/lpips_model/lpips-tensorflow/
+torch
+onnx
+onnx-tf

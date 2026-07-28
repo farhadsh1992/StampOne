@@ -1,6 +1,6 @@
 #!/bin/sh
 # Requires: pip install . (or pip install stampone) from the repo root,
-# which installs the stampone-decode console script.
+# which installs the stampone-encode console script.
 export MASTER_PORT=6036
 echo MASTER_PORT=${MASTER_PORT}
 
@@ -19,14 +19,15 @@ echo $DATASET $MODE $GPUS
 
 if [[ $MODE == default ]]; then
 	echo "==> default Setting"
-    stampone-decode
+    stampone-encode
 else
     echo "==> Setup Setting"
-    stampone-decode --gpu_devices 0 \
+    stampone-encode --gpu_devices 0 \
                        --detector FaceDetection \
-                       --encoded_images './results/encoded_images/' \
+                       --original_images 'path_to_dataset/' \
                        --save_dir "./results/" \
-                       --save_decode_message True \
+                       --random_message False \
+                       --message "Visteam" \
                        --BCH_BITS 25 \
                        --BCH_POLYNOMIAL 487 \
                        --secret_size 256
