@@ -12,15 +12,20 @@ INFO:
 
 # import modules
 import http.client, urllib
+import os
 import psutil
 
 
 
 class Message_Sender():
     def __init__(self, token:str=None, user:str=None):
-        ## 
-        self.token = "avuuii36ifd935esj8wai4w37z6kof"
-        self.user = "ux3id4tq4eeqaq7siwakmswyv4apmk"
+        self.token = token or os.environ.get("PUSHOVER_TOKEN")
+        self.user = user or os.environ.get("PUSHOVER_USER")
+        if not self.token or not self.user:
+            raise ValueError(
+                "Message_Sender requires a Pushover token/user, either passed in "
+                "directly or via the PUSHOVER_TOKEN / PUSHOVER_USER environment variables."
+            )
     def send_message_to_my_phone(self, title:str, message:str, url:str="", priority:int=1):
 
 
